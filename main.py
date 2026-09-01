@@ -40,8 +40,6 @@ from stock_strategies.performance import update_performance, summary as perf_sum
 
 REQUIRED_ENV = [
     "FINMIND_TOKEN",
-    "TELEGRAM_BOT_TOKEN",
-    "TELEGRAM_CHAT_ID",
     "GOOGLE_SHEET_ID",
     "GOOGLE_CREDS_JSON",
 ]
