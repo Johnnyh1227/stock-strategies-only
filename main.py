@@ -119,11 +119,24 @@ def main():
         print(f"⚠️ Performance 追蹤失敗: {e}", file=sys.stderr)
         stats = None
 
-    # 7. 發送 Telegram
-    print("發送 Telegram...")
-    for msg in format_messages(results, watchlist, market=market, night_note=night_note):
-        send_telegram(msg)
-        time.sleep(0.5)
+    # 7. 通知（可選）
+    telegram_enabled = (
+        os.environ.get("TELEGRAM_BOT_TOKEN")
+        and os.environ.get("TELEGRAM_CHAT_ID")
+    )
+
+    if telegram_enabled:
+        print("發送 Telegram...")
+        for msg in format_messages(
+            results, watchlist, market=market, night_note=night_note
+        ):
+            send_telegram(msg)
+            time.sleep(0.5)
+
+        if stats and stats["count"] >= 5:
+            send_telegram(_format_perf_message(stats))
+    else:
+        print("ℹ️ 未設定 Telegram，跳過通知")
 
     # 8. 若有累積的成績單，額外推一則摘要
     if stats and stats["count"] >= 5:
