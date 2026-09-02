@@ -2,8 +2,8 @@ name: V3 Daily Signal
 
 on:
   schedule:
-    # 台灣時間 14:30 = UTC 06:30 (台股收盤後)
-    - cron: '30 6 * * 1-5'
+    - cron: '35 14 * * 1-5'
+      timezone: 'Asia/Taipei'
   workflow_dispatch:  # 允許手動觸發測試
 
 jobs:
