@@ -19,8 +19,23 @@ export default function Dashboard() {
       if (d.strategies.find((s) => s.id === "default")) setPicked("default");
       else if (d.strategies[0]) setPicked(d.strategies[0].id);
     });
-    api.getMarket().then(setMarket).catch(() => setMarket(null));
-    api.getWatchlist().then((w) => setWatchCount(w.items?.length ?? 0)).catch(() => setWatchCount(null));
+
+    api.getMarket()
+      .then(setMarket)
+      .catch(() => setMarket(null));
+
+    api.getWatchlist()
+      .then((w) => setWatchCount(w.items?.length ?? 0))
+      .catch(() => setWatchCount(null));
+
+    // 讀取上一次執行結果
+    api.getLatestRun()
+      .then((d) => {
+        if (d.result) {
+          setRun(d.result);
+        }
+      })
+      .catch(() => {});
   }, []);
 
   async function doRun() {

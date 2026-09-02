@@ -1,0 +1,687 @@
+{
+  "strategy": {
+    "id": "default",
+    "name": "預設策略 V3.2 (基本面+技術+回測)"
+  },
+  "market": {
+    "bullish": true,
+    "close": 46164.72,
+    "ma20": 45468.948000000004,
+    "note": "🟢 加權 46165 站上 20 日線 (+1.5%)，BUY 訊號照常發出"
+  },
+  "downgraded": 0,
+  "summary": {
+    "total": 16,
+    "buy": 1,
+    "watch": 5,
+    "skip": 10,
+    "error": 0
+  },
+  "results": [
+    {
+      "stock_id": "2330",
+      "name": "台積電",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [],
+      "action": "BUY",
+      "signal_score": 77.7,
+      "components": {
+        "fundamental_pass": true,
+        "eps_min": 32.34,
+        "roe_min": 23.97,
+        "tech_score": 55,
+        "tech_signals": [
+          "布林下軌反彈",
+          "MACD多頭"
+        ],
+        "backtest_winrate": 0.78,
+        "backtest_samples": 209,
+        "volume_patterns": [
+          "縮量柱"
+        ],
+        "volume_details": {
+          "縮量柱": "連續 3 日量能遞減，回調但賣壓輕"
+        },
+        "volume_bonus": 5,
+        "volume_verdict": "🟡 量縮洗盤，主力未退場"
+      },
+      "trend": {
+        "chg_5d": -1.24,
+        "chg_20d": -0.83,
+        "vol_ratio": 1.18,
+        "pct_from_high": -5.9,
+        "above_ma20": false,
+        "above_ma60": false
+      },
+      "entry_price": 2385.0,
+      "stop_loss_price": 2194.2,
+      "target_price": 2623.5,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "2308",
+      "name": "台達電",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "偵測到放量滯漲，高檔爆量疑似出貨"
+      ],
+      "action": "WATCH",
+      "signal_score": 66.1,
+      "components": {
+        "fundamental_pass": true,
+        "eps_min": 12.86,
+        "roe_min": 19.19,
+        "tech_score": 40,
+        "tech_signals": [
+          "KD黃金交叉",
+          "MACD多頭"
+        ],
+        "backtest_winrate": 0.602,
+        "backtest_samples": 221,
+        "volume_patterns": [
+          "放量滯漲"
+        ],
+        "volume_details": {
+          "放量滯漲": "量放大 1.6x 但 K 線收黑或留上影"
+        },
+        "volume_bonus": -20,
+        "volume_verdict": "⚠️ 高檔爆量疑似出貨，持有者應考慮砍半鎖利"
+      },
+      "trend": {
+        "chg_5d": -1.14,
+        "chg_20d": 4.85,
+        "vol_ratio": 0.99,
+        "pct_from_high": -33.1,
+        "above_ma20": false,
+        "above_ma60": false
+      },
+      "entry_price": 1730.0,
+      "stop_loss_price": 1591.6,
+      "target_price": 1903.0,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "2454",
+      "name": "聯發科",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "歷史勝率 46% 低於五成",
+        "偵測到放量滯漲，高檔爆量疑似出貨"
+      ],
+      "action": "WATCH",
+      "signal_score": 63.9,
+      "components": {
+        "fundamental_pass": true,
+        "eps_min": 48.51,
+        "roe_min": 22.05,
+        "tech_score": 52,
+        "tech_signals": [
+          "KD黃金交叉",
+          "MACD多頭"
+        ],
+        "backtest_winrate": 0.457,
+        "backtest_samples": 188,
+        "volume_patterns": [
+          "倍量柱",
+          "放量滯漲"
+        ],
+        "volume_details": {
+          "倍量柱": "今日量為昨日 4.8x",
+          "放量滯漲": "量放大 3.8x 但 K 線收黑或留上影"
+        },
+        "volume_bonus": -10,
+        "volume_verdict": "⚠️ 高檔爆量疑似出貨，持有者應考慮砍半鎖利"
+      },
+      "trend": {
+        "chg_5d": 8.37,
+        "chg_20d": 6.88,
+        "vol_ratio": 1.12,
+        "pct_from_high": -14.0,
+        "above_ma20": true,
+        "above_ma60": true
+      },
+      "entry_price": 4275.0,
+      "stop_loss_price": 3933.0,
+      "target_price": 4702.5,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "2395",
+      "name": "研華",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "歷史勝率 44% 低於五成"
+      ],
+      "action": "WATCH",
+      "signal_score": 62.7,
+      "components": {
+        "fundamental_pass": true,
+        "eps_min": 10.45,
+        "roe_min": 18.37,
+        "tech_score": 50,
+        "tech_signals": [
+          "均線多頭",
+          "KD黃金交叉"
+        ],
+        "backtest_winrate": 0.442,
+        "backtest_samples": 226,
+        "volume_patterns": [],
+        "volume_details": {},
+        "volume_bonus": 0,
+        "volume_verdict": "量能平淡，無特殊訊號"
+      },
+      "trend": {
+        "chg_5d": 0.58,
+        "chg_20d": 9.32,
+        "vol_ratio": 0.72,
+        "pct_from_high": -3.2,
+        "above_ma20": true,
+        "above_ma60": true
+      },
+      "entry_price": 692.0,
+      "stop_loss_price": 636.64,
+      "target_price": 761.2,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "2383",
+      "name": "台光電",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [],
+      "action": "WATCH",
+      "signal_score": 59.0,
+      "components": {
+        "fundamental_pass": true,
+        "eps_min": 16.33,
+        "roe_min": 19.31,
+        "tech_score": 15,
+        "tech_signals": [],
+        "backtest_winrate": 0.613,
+        "backtest_samples": 225,
+        "volume_patterns": [
+          "縮量柱"
+        ],
+        "volume_details": {
+          "縮量柱": "連續 3 日量能遞減，回調但賣壓輕"
+        },
+        "volume_bonus": 5,
+        "volume_verdict": "🟡 量縮洗盤，主力未退場"
+      },
+      "trend": {
+        "chg_5d": -7.63,
+        "chg_20d": 3.81,
+        "vol_ratio": 1.01,
+        "pct_from_high": -15.8,
+        "above_ma20": false,
+        "above_ma60": true
+      },
+      "entry_price": 5445.0,
+      "stop_loss_price": 5009.4,
+      "target_price": 5989.5,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "00631L",
+      "name": "50正2",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "基本面未過門檻"
+      ],
+      "action": "WATCH",
+      "signal_score": 55.8,
+      "components": {
+        "fundamental_pass": false,
+        "eps_min": null,
+        "roe_min": null,
+        "tech_score": 62,
+        "tech_signals": [
+          "KD黃金交叉",
+          "MACD多頭"
+        ],
+        "backtest_winrate": 0.629,
+        "backtest_samples": 224,
+        "volume_patterns": [],
+        "volume_details": {},
+        "volume_bonus": 0,
+        "volume_verdict": "量能平淡，無特殊訊號"
+      },
+      "trend": {
+        "chg_5d": 0.62,
+        "chg_20d": 5.21,
+        "vol_ratio": 1.13,
+        "pct_from_high": -93.4,
+        "above_ma20": true,
+        "above_ma60": true
+      },
+      "entry_price": 35.93,
+      "stop_loss_price": 33.06,
+      "target_price": 39.52,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "4585",
+      "name": "達明",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "基本面未過門檻"
+      ],
+      "action": "SKIP",
+      "signal_score": 48.2,
+      "components": {
+        "fundamental_pass": false,
+        "eps_min": 0.17,
+        "roe_min": 1.98,
+        "tech_score": 33,
+        "tech_signals": [
+          "布林下軌反彈"
+        ],
+        "backtest_winrate": 0.657,
+        "backtest_samples": 99,
+        "volume_patterns": [
+          "低量柱"
+        ],
+        "volume_details": {
+          "低量柱": "今日量僅 20 日均量 58%，拋壓耗盡"
+        },
+        "volume_bonus": 8,
+        "volume_verdict": "🟡 底部極限縮量，拋壓耗盡，等待訊號"
+      },
+      "trend": {
+        "chg_5d": -2.16,
+        "chg_20d": -2.16,
+        "vol_ratio": 0.69,
+        "pct_from_high": -64.3,
+        "above_ma20": false,
+        "above_ma60": false
+      },
+      "entry_price": 294.5,
+      "stop_loss_price": 270.94,
+      "target_price": 323.95,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "00635U",
+      "name": "元大黃金",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "基本面未過門檻"
+      ],
+      "action": "SKIP",
+      "signal_score": 46.5,
+      "components": {
+        "fundamental_pass": false,
+        "eps_min": null,
+        "roe_min": null,
+        "tech_score": 25,
+        "tech_signals": [
+          "布林下軌反彈"
+        ],
+        "backtest_winrate": 0.674,
+        "backtest_samples": 233,
+        "volume_patterns": [],
+        "volume_details": {},
+        "volume_bonus": 0,
+        "volume_verdict": "量能平淡，無特殊訊號"
+      },
+      "trend": {
+        "chg_5d": -7.3,
+        "chg_20d": 3.63,
+        "vol_ratio": 0.99,
+        "pct_from_high": -29.2,
+        "above_ma20": false,
+        "above_ma60": true
+      },
+      "entry_price": 44.59,
+      "stop_loss_price": 41.02,
+      "target_price": 49.05,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "5484",
+      "name": "慧友",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "基本面未過門檻",
+        "歷史勝率 46% 低於五成"
+      ],
+      "action": "SKIP",
+      "signal_score": 43.5,
+      "components": {
+        "fundamental_pass": false,
+        "eps_min": -0.9,
+        "roe_min": -11.83,
+        "tech_score": 43,
+        "tech_signals": [
+          "MACD多頭"
+        ],
+        "backtest_winrate": 0.465,
+        "backtest_samples": 198,
+        "volume_patterns": [
+          "低量柱"
+        ],
+        "volume_details": {
+          "低量柱": "今日量僅 20 日均量 58%，拋壓耗盡"
+        },
+        "volume_bonus": 8,
+        "volume_verdict": "🟡 底部極限縮量，拋壓耗盡，等待訊號"
+      },
+      "trend": {
+        "chg_5d": -0.5,
+        "chg_20d": -2.66,
+        "vol_ratio": 0.53,
+        "pct_from_high": -31.7,
+        "above_ma20": false,
+        "above_ma60": false
+      },
+      "entry_price": 40.2,
+      "stop_loss_price": 36.98,
+      "target_price": 44.22,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "2344",
+      "name": "華邦電",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "基本面未過門檻",
+        "歷史勝率 44% 低於五成"
+      ],
+      "action": "SKIP",
+      "signal_score": 41.1,
+      "components": {
+        "fundamental_pass": false,
+        "eps_min": -0.29,
+        "roe_min": -7.81,
+        "tech_score": 38,
+        "tech_signals": [
+          "均線多頭"
+        ],
+        "backtest_winrate": 0.443,
+        "backtest_samples": 230,
+        "volume_patterns": [
+          "縮量柱",
+          "低量柱"
+        ],
+        "volume_details": {
+          "縮量柱": "連續 3 日量能遞減，回調但賣壓輕",
+          "低量柱": "今日量僅 20 日均量 49%，拋壓耗盡"
+        },
+        "volume_bonus": 13,
+        "volume_verdict": "🟡 底部極限縮量 + 洗盤完成，逢訊號可伏擊"
+      },
+      "trend": {
+        "chg_5d": -1.38,
+        "chg_20d": 5.92,
+        "vol_ratio": 1.12,
+        "pct_from_high": -23.3,
+        "above_ma20": true,
+        "above_ma60": true
+      },
+      "entry_price": 179.0,
+      "stop_loss_price": 164.68,
+      "target_price": 196.9,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "6116",
+      "name": "彩晶",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "基本面未過門檻",
+        "歷史勝率 36% 低於五成"
+      ],
+      "action": "SKIP",
+      "signal_score": 39.4,
+      "components": {
+        "fundamental_pass": false,
+        "eps_min": -1.86,
+        "roe_min": -22.06,
+        "tech_score": 43,
+        "tech_signals": [
+          "MACD多頭"
+        ],
+        "backtest_winrate": 0.363,
+        "backtest_samples": 190,
+        "volume_patterns": [
+          "低量柱"
+        ],
+        "volume_details": {
+          "低量柱": "今日量僅 20 日均量 45%，拋壓耗盡"
+        },
+        "volume_bonus": 8,
+        "volume_verdict": "🟡 底部極限縮量，拋壓耗盡，等待訊號"
+      },
+      "trend": {
+        "chg_5d": -1.74,
+        "chg_20d": -0.35,
+        "vol_ratio": 0.77,
+        "pct_from_high": -37.7,
+        "above_ma20": false,
+        "above_ma60": false
+      },
+      "entry_price": 14.15,
+      "stop_loss_price": 13.02,
+      "target_price": 15.57,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "3680",
+      "name": "家登",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "基本面未過門檻",
+        "歷史勝率 36% 低於五成",
+        "偵測到放量滯漲，高檔爆量疑似出貨"
+      ],
+      "action": "SKIP",
+      "signal_score": 39.2,
+      "components": {
+        "fundamental_pass": false,
+        "eps_min": 9.43,
+        "roe_min": 4.66,
+        "tech_score": 42,
+        "tech_signals": [
+          "KD黃金交叉",
+          "MACD多頭"
+        ],
+        "backtest_winrate": 0.365,
+        "backtest_samples": 203,
+        "volume_patterns": [
+          "放量滯漲"
+        ],
+        "volume_details": {
+          "放量滯漲": "量放大 1.5x 但 K 線收黑或留上影"
+        },
+        "volume_bonus": -20,
+        "volume_verdict": "⚠️ 高檔爆量疑似出貨，持有者應考慮砍半鎖利"
+      },
+      "trend": {
+        "chg_5d": 6.56,
+        "chg_20d": 16.2,
+        "vol_ratio": 1.6,
+        "pct_from_high": -16.5,
+        "above_ma20": true,
+        "above_ma60": true
+      },
+      "entry_price": 520.0,
+      "stop_loss_price": 478.4,
+      "target_price": 572.0,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "2408",
+      "name": "南亞科",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "基本面未過門檻",
+        "歷史勝率 35% 低於五成"
+      ],
+      "action": "SKIP",
+      "signal_score": 37.4,
+      "components": {
+        "fundamental_pass": false,
+        "eps_min": -2.4,
+        "roe_min": -4.46,
+        "tech_score": 38,
+        "tech_signals": [
+          "均線多頭"
+        ],
+        "backtest_winrate": 0.35,
+        "backtest_samples": 220,
+        "volume_patterns": [
+          "縮量柱",
+          "低量柱"
+        ],
+        "volume_details": {
+          "縮量柱": "連續 3 日量能遞減，回調但賣壓輕",
+          "低量柱": "今日量僅 20 日均量 56%，拋壓耗盡"
+        },
+        "volume_bonus": 13,
+        "volume_verdict": "🟡 底部極限縮量 + 洗盤完成，逢訊號可伏擊"
+      },
+      "trend": {
+        "chg_5d": 0.19,
+        "chg_20d": 16.4,
+        "vol_ratio": 1.1,
+        "pct_from_high": -9.0,
+        "above_ma20": true,
+        "above_ma60": true
+      },
+      "entry_price": 518.0,
+      "stop_loss_price": 476.56,
+      "target_price": 569.8,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "2359",
+      "name": "所羅門",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "基本面未過門檻",
+        "歷史勝率 46% 低於五成"
+      ],
+      "action": "SKIP",
+      "signal_score": 35.9,
+      "components": {
+        "fundamental_pass": false,
+        "eps_min": 0.84,
+        "roe_min": 3.18,
+        "tech_score": 18,
+        "tech_signals": [],
+        "backtest_winrate": 0.462,
+        "backtest_samples": 212,
+        "volume_patterns": [
+          "低量柱"
+        ],
+        "volume_details": {
+          "低量柱": "今日量僅 20 日均量 37%，拋壓耗盡"
+        },
+        "volume_bonus": 8,
+        "volume_verdict": "🟡 底部極限縮量，拋壓耗盡，等待訊號"
+      },
+      "trend": {
+        "chg_5d": -1.37,
+        "chg_20d": -0.34,
+        "vol_ratio": 0.42,
+        "pct_from_high": -21.0,
+        "above_ma20": false,
+        "above_ma60": true
+      },
+      "entry_price": 144.5,
+      "stop_loss_price": 132.94,
+      "target_price": 158.95,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "3037",
+      "name": "欣興",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "基本面未過門檻"
+      ],
+      "action": "SKIP",
+      "signal_score": 35.6,
+      "components": {
+        "fundamental_pass": false,
+        "eps_min": 3.35,
+        "roe_min": 8.0,
+        "tech_score": 10,
+        "tech_signals": [],
+        "backtest_winrate": 0.514,
+        "backtest_samples": 208,
+        "volume_patterns": [],
+        "volume_details": {},
+        "volume_bonus": 0,
+        "volume_verdict": "量能平淡，無特殊訊號"
+      },
+      "trend": {
+        "chg_5d": -16.12,
+        "chg_20d": 0.41,
+        "vol_ratio": 1.52,
+        "pct_from_high": -20.9,
+        "above_ma20": false,
+        "above_ma60": true
+      },
+      "entry_price": 973.0,
+      "stop_loss_price": 895.16,
+      "target_price": 1070.3,
+      "risk_reward_ratio": 1.25,
+      "position_size_pct": 20.0,
+      "entry_rule": "明日以開盤價進場，停損 -8% / 停利 +10%（下方參考價為今日收盤）"
+    },
+    {
+      "stock_id": "50",
+      "name": "元大台灣50",
+      "date": "2026-09-02",
+      "strategy_id": "default",
+      "risk_notes": [
+        "價格資料不足"
+      ],
+      "action": "SKIP"
+    }
+  ],
+  "saved_at": "2026-09-02T22:56:11"
+}

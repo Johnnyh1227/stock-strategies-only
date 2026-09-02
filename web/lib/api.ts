@@ -51,7 +51,12 @@ export const api = {
       body: JSON.stringify({ prompt, name }),
     }),
   getMarket: () => jfetch<any>("/api/market"),
-  getWatchlist: () => jfetch<{ items: any[]; error?: string }>("/api/watchlist"),
+  getWatchlist: () =>
+    jfetch<{ items: any[]; error?: string }>("/api/watchlist"),
+
+  getLatestRun: () =>
+    jfetch<{ result: RunResult | null }>("/api/run/latest"),
+
   run: (strategy_id: string, limit?: number) =>
     jfetch<RunResult>("/api/run", {
       method: "POST",
